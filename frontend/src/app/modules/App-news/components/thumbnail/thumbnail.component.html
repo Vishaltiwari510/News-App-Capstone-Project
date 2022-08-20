@@ -1,0 +1,20 @@
+
+<mat-card class="news-card">
+    <mat-card-header>
+        
+        <mat-card-title class="news-title">{{news?.title}}</mat-card-title>
+        <mat-card-subtitle >{{news?.sourceWebsiteName}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="news-image" [src]="news?.urlToImage" [alt]=""/>
+    <mat-card-content class="news-overview">
+        {{news?.description}}
+    </mat-card-content>                                                 
+    <mat-card-actions class="news-actions">
+        <a color="primary" href={{news?.url}}>Read more...</a>                           
+        <button *ngIf="!favCheck" class="add-button" mat-raised-button color="primary"  (click)="addToFavouriteList()">Add to favourites</button>
+        <button *ngIf="favCheck" class="delete-button" mat-raised-button color="warn"  (click)="deleteNewsFav()">Delete</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+  

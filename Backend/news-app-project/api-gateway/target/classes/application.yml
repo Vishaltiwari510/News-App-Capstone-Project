@@ -1,0 +1,46 @@
+server:
+    port: 9001
+    
+spring:
+    main: 
+      webApplicationType: reactive
+    application:
+        name: ApiGateway  
+    cloud:
+       gateway:
+         globalcors:
+           add-to-simple-url-handler-mapping: true
+           cors-configurations:
+             '[/**]':
+               allowedOrigins: "http://localhost:4200"
+               allowedHeaders: "*"
+               allowedMethods:
+               - GET
+               - POST
+               - PUT
+               - PATCH
+               - DELETE
+         routes:
+            - id: favouriteservice
+              uri: lb://FAVOURITESERVICE
+              predicates:
+                - Path=/api/news/**
+              filters:  
+                - AuthenticationFilter
+            - id: userauthservice
+              uri: lb://USERAUTHSERVICE
+              predicates:
+                - Path=/api/v1/userservice/**
+                
+         
+eureka:
+    client:
+        service-url:
+            defaultZone: http://eurekaservice-container:8761/eureka
+        fetch-registry: true
+        register-with-eureka: true
+        
+jwt:
+  secret: secretkey
+  validity: 20
+  authDisabled: false

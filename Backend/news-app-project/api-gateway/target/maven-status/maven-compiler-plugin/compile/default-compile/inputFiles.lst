@@ -1,0 +1,10 @@
+C:\Users\tiwar\Pictures\Backend\news-app-project\api-gateway\src\main\java\com\stackroute\capstone\apigateway\congif\JwtConfig.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\api-gateway\src\main\java\com\stackroute\capstone\apigateway\dto\ErrorResponseDto.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\api-gateway\src\main\java\com\stackroute\capstone\apigateway\util\JwtTokenUtil.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\api-gateway\src\main\java\com\stackroute\capstone\apigateway\exception\JwtTokenIncorrectStructureException.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\api-gateway\src\main\java\com\stackroute\capstone\apigateway\exception\JwtTokenMissingException.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\api-gateway\src\main\java\com\stackroute\capstone\apigateway\filter\JwtFilter.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\api-gateway\src\main\java\com\stackroute\capstone\apigateway\ApiGatewayService.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\api-gateway\src\main\java\com\stackroute\capstone\apigateway\filter\AuthenticationFilter.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\api-gateway\src\main\java\com\stackroute\capstone\apigateway\exception\JwtTokenMalformedException.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\api-gateway\src\main\java\com\stackroute\capstone\apigateway\util\RouterValidator.java

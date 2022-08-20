@@ -1,0 +1,4 @@
+com\stackroute\favouriteservice\controller\NewsControllerTest.class
+com\stackroute\favouriteservice\FavourtieserviceApplicationTests.class
+com\stackroute\favouriteservice\service\NewsServiceTest.class
+com\stackroute\favouriteservice\repository\NewsRepositoryTest.class

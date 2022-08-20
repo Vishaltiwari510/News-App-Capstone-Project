@@ -1,0 +1,19 @@
+<form class="login-form" [formGroup]="loginForm" [style.fontSize.px]="20">
+  <div class="login-block">
+    <div class="row">
+      <mat-form-field class="login-input-full-width">
+
+        <input matInput placeholder="User Id" id="userId" formControlName="userId" required minlength="5" maxlength="10" class="userId">
+        <mat-error *ngIf="loginForm.get('userId').errors?.required">User Id is mandatory</mat-error>
+      </mat-form-field>
+      <mat-form-field class="login-input-full-width">
+        <input matInput placeholder="Password" type="password" formControlName="password" id="password" required class="password">
+          <mat-error *ngIf="loginForm.get('password').errors?.required">Password is mandatory</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="row">
+      <button class="login-button" type="submit" mat-raised-button (click)="loginUser()" color="primary" >Login</button>
+      <button class="register-button" mat-raised-button [routerLink]="['/register']" color="primary" >Register</button>
+    </div>
+  </div>
+</form>

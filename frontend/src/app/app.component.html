@@ -1,0 +1,39 @@
+
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+      <mat-icon>home</mat-icon>
+    </button>
+    <span>NewsApp</span>
+      <span fxShow="true" fxHide.lt-md>
+      <button *ngIf="!auth.isTokenExpired()" class="search-button" mat-button class="search-button" [routerLink]="['/news/search']">Search</button>
+      <button *ngIf="!auth.isTokenExpired()" mat-button [routerLink]="['/news/top']">Top News</button>
+      <button *ngIf="!auth.isTokenExpired()" class="fav-button" mat-button [routerLink]="['/news/favourites']">Favourites</button>
+     
+    </span>
+    <span  class="menu-spacer"></span>
+    <span *ngIf="!auth.isTokenExpired()" fxShow="true" fxHide.lt-md>
+      <button class="logout" mat-button (click)="logout()">Logout</button>
+    </span>
+    <span *ngIf="auth.isTokenExpired()" fxShow="true" fxHide.lt-md>
+      <!-- <button mat-button [routerLink]="['/login']">Login</button> -->
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+<mat-sidenav-container fxFlexFill>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+        <a *ngIf="!auth.isTokenExpired()" mat-list-item [routerLink]="['/news/top']">Top </a>
+      <a *ngIf="!auth.isTokenExpired()" mat-list-item [routerLink]="['/news/favourites']">Favourites</a>
+      <a *ngIf="!auth.isTokenExpired()"  mat-list-item [routerLink]="['/news/search']">Search</a>
+
+      <a *ngIf="!auth.isTokenExpired()" mat-list-item (click)="logout()">Logout</a>
+     `  
+    </mat-nav-list>
+  </mat-sidenav>
+
+
+<router-outlet></router-outlet>

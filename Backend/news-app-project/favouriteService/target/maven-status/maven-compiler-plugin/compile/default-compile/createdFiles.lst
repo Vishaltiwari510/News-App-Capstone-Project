@@ -1,0 +1,9 @@
+com\stackroute\favouriteservice\service\NewsService.class
+com\stackroute\favouriteservice\FavourtieserviceApplication.class
+com\stackroute\favouriteservice\repository\NewsRepository.class
+com\stackroute\favouriteservice\domain\News.class
+com\stackroute\favouriteservice\exception\NewsNotFoundException.class
+com\stackroute\favouriteservice\service\NewsServiceImpl.class
+com\stackroute\favouriteservice\controller\NewsController.class
+com\stackroute\favouriteservice\exception\NewsAlreadyExistsException.class
+com\stackroute\favouriteservice\config\SwaggerConfig.class

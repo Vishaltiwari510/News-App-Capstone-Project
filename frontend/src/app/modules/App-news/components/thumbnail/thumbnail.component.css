@@ -1,0 +1,46 @@
+.news-thumbnail{
+    width : 300px;
+    margin : 20px;
+}
+
+.news-image{
+    height: 250px;
+
+}
+
+.news-card{
+    margin-bottom: 100px;
+    margin-top: 50px;
+   
+    width : 356px;
+    height : 63vh
+}
+.news-overview{
+    /* height:80px;
+    overflow-x:hidden;
+    overflow-y: auto;
+    justify-content: newspaper; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-height: 20px;        /* fallback */
+    max-height: 80px;       /* fallback */
+}
+
+.news-title{
+    width : 300px; 
+    height : 100px;
+    overflow-x: hidden;
+}
+
+.news-overview::-webkit-scrollbar{
+    width:2px;
+    background: gray;
+}
+
+#add-button, #delete-button
+{
+    float : right;
+}

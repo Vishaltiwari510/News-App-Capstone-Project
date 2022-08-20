@@ -1,0 +1,9 @@
+C:\Users\tiwar\Pictures\Backend\news-app-project\favouriteService\src\main\java\com\stackroute\favouriteservice\service\NewsService.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\favouriteService\src\main\java\com\stackroute\favouriteservice\service\NewsServiceImpl.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\favouriteService\src\main\java\com\stackroute\favouriteservice\config\SwaggerConfig.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\favouriteService\src\main\java\com\stackroute\favouriteservice\FavourtieserviceApplication.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\favouriteService\src\main\java\com\stackroute\favouriteservice\exception\NewsAlreadyExistsException.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\favouriteService\src\main\java\com\stackroute\favouriteservice\exception\NewsNotFoundException.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\favouriteService\src\main\java\com\stackroute\favouriteservice\repository\NewsRepository.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\favouriteService\src\main\java\com\stackroute\favouriteservice\domain\News.java
+C:\Users\tiwar\Pictures\Backend\news-app-project\favouriteService\src\main\java\com\stackroute\favouriteservice\controller\NewsController.java

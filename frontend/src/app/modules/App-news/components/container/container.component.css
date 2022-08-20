@@ -1,0 +1,14 @@
+:host {
+    height: 100vh;
+}
+
+.news-container {
+    margin:auto;
+    width:100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  height:100vh;
+  overflow-x:auto;
+  justify-content: space-around;
+} 

@@ -1,0 +1,69 @@
+version: '3.9'
+services:
+  userauthservice:
+    image: userauthservice
+    build: userauthservice/
+    container_name: authenticationservice-container
+    ports:
+      - 8085:8085
+    depends_on:
+      - mysql
+      - eurekaservice
+    restart: always
+    networks:
+      - springboot-net
+  
+  favouriteservice:
+    image: favouriteservice
+    container_name: favouriteservice-container
+    build: favouriteService/
+    ports:
+      - 8081:8081
+    depends_on:
+      - mysql
+      - eurekaservice
+    restart: always
+    networks:
+      - springboot-net
+      
+  apigatewayservice:
+    image: apigatewayservice
+    container_name: apigatewayservice-container
+    build: api-gateway/
+    ports:
+      - 9001:9001
+    depends_on:
+      - userauthservice
+      - eurekaservice
+    restart: always
+    networks:
+      - springboot-net
+  
+  eurekaservice:
+    image:  eurekaservice
+    container_name: eurekaservice-container
+    build: Eureka_server/
+    ports:
+      - 8761:8761
+    restart:  always
+    networks:
+      - springboot-net
+   
+  mysql:
+    image:  mysql
+    container_name: mysql-container
+    ports:
+      - 3307:3306
+    restart: always
+    networks:
+      - springboot-net
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE : news_user_db
+      MYSQL_USER: root123
+      MYSQL_PASSWORD : root123
+
+networks:
+  springboot-net:
+    name: springboot-net
+    driver: bridge

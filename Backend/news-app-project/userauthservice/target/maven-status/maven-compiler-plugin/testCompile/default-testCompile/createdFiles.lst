@@ -1,0 +1,4 @@
+com\stackroute\capstone\userauthservice\controller\UserControllerTest.class
+com\stackroute\capstone\userauthservice\services\UserServiceTest.class
+com\stackroute\capstone\userauthservice\UserserviceApplicationTests.class
+com\stackroute\capstone\userauthservice\repository\UserRepositoryTest.class
