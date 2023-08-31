@@ -1,4 +1,4 @@
-# News-App-Capstone-Project
+# News-App
 <b>Note: This Project is dockerized, in order to run in Spring tool suite, we should change the application properties as per the requirement.</b>
 
 <b>Steps for running the service in Docker.(Docker desktop must be installed</b>)
